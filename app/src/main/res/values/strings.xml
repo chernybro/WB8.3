@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">WB5.3</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="votes_fragment_label">Tinder Cats</string>
+    <string name="favourites_fragment_label">Favourites</string>
+    <string name="favourites">Favourites</string>
+    <string name="error_internet_not_found">Please turn on the Internet</string>
+    <string name="about_label">About</string>
+    <string name="author_info">Author Info</string>
+    <string name="name">Name</string>
+    <string name="anvar_gubaidullin">Anvar Gubaidullin</string>
+    <string name="nickname">Nickname</string>
+    <string name="chernybro">chernybro</string>
+    <string name="project_info">Project Info</string>
+    <string name="date_of_creation">Date of creation</string>
+    <string name="date_of_creation_value">22.06.2022</string>
+    <string name="project_link">Project Link</string>
+    <string name="github_hyperlink"><u>TinderCats</u></string>
+    <string name="github_project_link">https://github.com/chernybro/WB8.3</string>
+</resources>

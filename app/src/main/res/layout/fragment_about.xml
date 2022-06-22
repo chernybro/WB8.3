@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <TextView
+        android:id="@+id/author_info"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/author_info"
+        android:textAppearance="@style/Theme.WB51.HeadlineMedium.TextAppearance"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/author_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textAppearance="@style/Theme.WB51.HeadlineSmall.TextAppearance"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/author_info" />
+
+    <TextView
+        android:id="@+id/tv_author_name_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_big"
+        android:text="@string/anvar_gubaidullin"
+        android:textAppearance="@style/Theme.WB51.HeadlineSmall.TextAppearance"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@id/author_name"
+        app:layout_constraintTop_toTopOf="@id/author_name" />
+
+    <TextView
+        android:id="@+id/tv_nickname_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nickname"
+        android:textAppearance="@style/Theme.WB51.HeadlineSmall.TextAppearance"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toTopOf="@id/tv_nickname_value" />
+
+
+    <TextView
+        android:id="@+id/tv_nickname_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chernybro"
+        android:textAppearance="@style/Theme.WB51.HeadlineSmall.TextAppearance"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintTop_toBottomOf="@id/tv_author_name_value" />
+
+    <TextView
+        android:id="@+id/project_info"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/project_info"
+        android:textAppearance="@style/Theme.WB51.HeadlineMedium.TextAppearance"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/tv_nickname_key" />
+
+    <TextView
+        android:id="@+id/project_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_of_creation"
+        android:textAppearance="@style/Theme.WB51.HeadlineSmall.TextAppearance"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/project_info" />
+
+    <TextView
+        android:id="@+id/project_date_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_big"
+        android:text="@string/date_of_creation_value"
+        android:textAppearance="@style/Theme.WB51.HeadlineSmall.TextAppearance"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@id/project_date"
+        app:layout_constraintTop_toTopOf="@id/project_date" />
+
+    <TextView
+        android:id="@+id/project_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/project_link"
+        android:textAppearance="@style/Theme.WB51.HeadlineSmall.TextAppearance"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toTopOf="@id/project_link_value" />
+
+
+    <TextView
+        android:id="@+id/project_link_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/github_hyperlink"
+        android:textAppearance="@style/Theme.WB51.HeadlineSmall.TextAppearance"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintTop_toBottomOf="@id/project_date_value" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
