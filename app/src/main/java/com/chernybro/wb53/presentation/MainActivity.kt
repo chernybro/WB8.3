@@ -11,6 +11,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import androidx.navigation.NavDestination
 import androidx.navigation.fragment.findNavController
 import com.chernybro.wb53.R
 import com.chernybro.wb53.databinding.ActivityMainBinding
@@ -35,7 +36,8 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
 
-        binding.info.setOnClickListener { findNavController(R.id.nav_host_fragment_content_main).navigate(R.id.action_FirstFragment_to_AboutFragment) }
+        findNavController(R.id.nav_host_fragment_content_main).currentDestination
+        binding.info.setOnClickListener { findNavController(R.id.nav_host_fragment_content_main).navigate(R.id.action_global_AboutFragment) }
     }
 
 
@@ -47,5 +49,13 @@ class MainActivity : AppCompatActivity() {
 
     fun toggleInfoButton(needToHide: Boolean) {
         binding.info.visibility = if (needToHide)  View.GONE else View.VISIBLE
+    }
+
+    fun navigateToInfo(currentDestination: NavDestination) {
+        if (currentDestination.id == R.id.SecondFragment) {
+            findNavController(R.id.nav_host_fragment_content_main).navigate(R.id.action_SecondFragment_to_AboutFragment)
+        } else if (currentDestination.id == R.id.FirstFragment) {
+            findNavController(R.id.nav_host_fragment_content_main).navigate(R.id.action_FirstFragment_to_AboutFragment)
+        }
     }
 }

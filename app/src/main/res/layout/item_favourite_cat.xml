@@ -14,6 +14,7 @@
         android:scaleType="centerCrop"/>
 
     <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/button_like"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_gravity="bottom|end"

@@ -45,7 +45,7 @@ class FavouritesListAdapter : RecyclerView.Adapter<FavouritesListAdapter.HeroLis
         fun bind(item: FavouriteCat) {
             itemCatBinding.apply {
                 ivCat.setImageURI(item.image.url)
-                this.root.setOnClickListener{ heroClickHandler?.onFavClicked(item) }
+                buttonLike.setOnClickListener{ heroClickHandler?.onFavClicked(item) }
             }
         }
     }

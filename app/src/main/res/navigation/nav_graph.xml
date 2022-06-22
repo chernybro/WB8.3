@@ -30,6 +30,10 @@
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+
+        <action
+            android:id="@+id/action_SecondFragment_to_AboutFragment"
+            app:destination="@id/AboutFragment" />
     </fragment>
 
     <fragment
@@ -41,5 +45,11 @@
         <action
             android:id="@+id/action_AboutFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+
+        <action
+            android:id="@+id/action_AboutFragment_to_SeconfFragment"
+            app:destination="@id/SecondFragment" />
+
     </fragment>
+    <action android:id="@+id/action_global_AboutFragment" app:destination="@id/AboutFragment" />
 </navigation>
